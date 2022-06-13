@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alaa Swelem & Alaa Yaseen </title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{box-sizing:border-box; margin:0px; padding:0px;}
+        body { width: 100%; height: 100%; font-family: sans-serif; font-size: 15px; color: #1c2749;  background-color:rgb(249,248,246); /* background-color: #f1efe9;*/ }
+        .container11{height:550px;}
+        .fadi{ background-image: linear-gradient(180deg,rgba(249,248,246,0) 44%,#f9f8f6);}
+        .khalfia0 { background-image: url('Header-1.jpg');  background-size:cover; background-repeat:no-repeat;}
+        @media(max-width:992px){.khalfia0{background-size:100% 90%;} .container31{background-size:150% 150%;} .title{font-size: 70px;}}
+        .row1{height:300px;}
+        .title{font-size:100px; font-weight:600;}
+        .bellow { width: 50px; height: 50px; border-radius: 50%; left:-23px;}
+        .width {width: 2px; height: 140px; }
+   /*     .list1{width:480px; height:620px;}*/
+
+        .khalfia1{width:100%; background-color:rgb(249,248,246);}
+        .bb{border-top: 1px dashed #e0e0e0;}
+        .orag{color: #e9895b;}
+        .minut{font-size:14px;}
+         .weight { opacity: 0.4; color: #fff; font-size: 85px; font-weight: 900;}
+
+
+         /*.container00{padding:150px;}*/
+         .bbaakk { background-color: gainsboro; }
+        .bbaakk2 { background-color: rgb(223,140,95); }
+         .hei { height: 240px;}
+        .kohli{color:#1c2749;}
+         #cap { font-size: 57px; font-weight: 800;}
+         .member{margin:0px auto 80px;}
+         .mause{color:#1c2749;}
+         .mause:hover { color: rgb(255,90,0); }
+
+
+
+
+         /*.container33{height:2400px; }*/
+        .container31 {  height: 700px;  background-image: url('girl.jpg');  background-size:cover; background-repeat:no-repeat; background-position-x:center;}
+        @media(max-width:480px){
+            .container31{background-size:100% 85%;}
+        }
+         #prodct { font-size: 45px; font-weight: 800;}
+         /*.list2{width:700px; height:770px; }
+         .list3{width:700px; height:950px; margin-bottom:150px;}*/
+        .pupular {font-size:13px; width:60px; border-radius:5px; background-color: #e9895b; color:white; }
+
+        .container55{width:100%; background-color:rgb(249,248,246);}
+
+         /*.container44{ height:200px;  width:100%; background-color:rgba(221,224,235,0.5); }
+        .fooot{ height:60px; width:45%; top:-25px; left:27%; }
+         .foot2 {top:100px; left:80px; }
+        .time{ height:20px;  width:20px; margin-right:10px;}
+        .contactus { width:200px; background-color: #1c2947; }
+        .contactus:hover{background-color:rgb(40,67,99);}
+        .fstyle{font-size:12px; }
+         .cool{ color:#908886;}*/
+   /*      @media(max-width:480px){sora{visibility:hidden;}}*/
+         @media (max-width: 768px) {.title{font-size:70px;} /*.rou1{width:631px; height:60px;}*/ .contactus{ width:100%; } .copy1{text-align:start; padding-right:45%;} .copy2{text-align:start; padding-right:45%;} .rou2,.copy { flex-direction: column; } .width,.bellow{visibility:hidden;} }
+        .rou1 { background-color: #fff;  box-shadow: 7px 7px 30px -10px ;/*width:631px;*/ height:60px; }
+        .time{ height:20px;  width:20px; margin-right:10px;}
+        .rou2{font-size:13px;}
+        .contactlink{background-color: #1c2749;}
+        .contactlink:hover{background-color:rgb(40,67,99);}
+        @media(max-width:576px){
+            .title{font-size:50px;}
+            #cap{font-size:45px;}
+            .rou2,.copy{flex-direction:column;}
+            .container00{width:100%; display:block;}
+            /*.container11,.abaut,.hei,.list1,.list2,.list3{width:100%;}*/
+            /*.double { display: block;  margin: 50px 50px 50px 500px;}*//*.abaut{width:500px;}*/ .width,.bellow{visibility:hidden;}
+            .khalfia1{display:flex; justify-content:center;}
+            .towlist{display:block;}
+
+            .rou1{height:100%;/* width:70%;*/}
+
+        }
+
+        @media(max-width:992px) {
+             .rou2,.copy {
+                flex-direction: column;
+            }
+        }
+        @media(min-width:992px){
+            .finalcontainer{position:relative;}
+            .rou1{ position:absolute; top:-30px; left:25%;}
+            .container00{padding:150px;}
+            .fs-4{width:65%;}
+            .rou1{width:631px;}
+        }
+        .hover:hover{color:rgba(255,90,0,0.5);}
+        .second{color: #8f7a74;}
+        .second2{color: #1c2749;}
+        .lastcontainer{background-color:rgba(221,224,235,0.5);/* margin-top:100px;*/ padding:0px; width:100%;}
+
+
+
+
+
+
+
+
+        .offcanvas-start {
+            top: 0;
+            right: 0;
+            width: 450px;
+            border-left: 1px solid rgba(0,0,0,.2);
+            transform: translateX(100%);
+        }
+
+        .offcanvas.show {
+            transform: none;
+        }
+
+        .offcanvas {
+            position: fixed;
+            bottom: 0;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            visibility: hidden;
+            background-color: #fff;
+            background-clip: padding-box;
+            outline: 0;
+            transition: transform .3s ease-in-out;
+        }
+               .A{border-bottom:1px solid #e2d8d6;}
+        .message{padding-bottom:100px;}
+        .submit{ background-color: #e9895b;}
+            .submit:hover {
+              box-shadow:2px -2px 2px #e9895b;
+            }
+        .bgcolor{ background-color: rgba(233,137,91,.1);}
+        .link{ color: #1c2749;}
+        .link:hover{color:rgba(255,90,0,0.5);}
+        .org{color:rgba(255,90,0,0.7);}
+        .question{color: #1c2749;}
+        .question:hover{color:rgba(255,90,0,0.5);}
+
+           .imgwid {
+            width: 120px;
+            height: 60px;
+        }
+
+        nav {
+            height: 55px;
+     
+        }
+  @media(max-width:768px) {
+            .navbar-nav {
+                height:100%;
+                width:40%;
+                background-color:white;
+            }
+        .title {
+            line-height: 35px;
+        }
+        #cap {
+            font-size: 45px;
+            line-height: 56px;
+        }
+        #prodct {
+            font-size: 45px;
+            line-height: 56px;
+        }
+        }
+        @media (max-width: 479px) {
+            .title {
+                font-size: 35px;
+            }
+            #cap {
+                font-size: 26px;
+                line-height: 38px;
+            }
+            #prodct {
+                
+                font-size: 26px;
+                line-height: 38px;
+            }
+        }
+     .as{  
+            color:#1c2749;
+        }
+       .book{background-color:#1c2749; height:55px;}
+       .sa:hover{color:#e9895b;}
+       .book:hover{color:#e9895b;}
+       .book:hover{background-color:#e9895b;}
+
+
+         .cont {
+            animation-name:cont;
+            animation-duration:1s;
+            animation-direction:reverse;
+            animation-fill-mode:backwards;
+        }
+        @keyframes cont{
+            from{margin-top:20px;}
+            to{margin-bottom:50px;}
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light  navbar-expand-md bg-white fixed-top">
+        <div class="border-end">
+            <a class="navbar-brand ps-3" href="NavBar.html">
+                <img src="imges/5a82a3ec71acd50001b1cb2b_Logo.svg" alt="" width="110" height="40">
+            </a>
+        </div>
+        <button class="navbar-toggler " style="color:#e9895b;   background-color:rgba(233,137,91,0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:#e9895b;"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-end AAA" id="mainnav">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item m-3 aass">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item  m-3">
+                    <a href="AlaaProduct.html" class="nav-link as">Products</a>
+                </li>
+                <li class="nav-item dropdown  m-3">
+                    <a href="#" class="nav-link dropdown-toggle as" data-bs-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li class="dropdown-item"><a class="text-decoration-none as sa" href="About Us.html">About us</a></li>
+                        <li class="dropdown-item">
+                            <a class="text-decoration-none as sa" href="Careers.html">Careers</a>
+                        </li>
+                        <li class="dropdown-item"><a class="text-decoration-none as sa" href="#">404 Page</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item  m-3">
+                    <a href="contactus.html" class="nav-link as">Contact</a>
+                </li>
+                <li class="d-sm-flex justify-content-center align-items-center col-sm-12 col-md-3 ">
+
+                    <button class="form-control-plaintext text-white  book " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Bookappointment</button>
+
+
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="visibility: visible;" aria-modal="true" role="dialog">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">&nbsp;</h5>
+                            <button type="button" class="form-control-plaintext question d-flex justify-content-end text-decoration-none" data-bs-dismiss="offcanvas" aria-label="Close"> close </button>
+                        </div>
+                        <div class="offcanvas-body pt-0 p-4">
+
+                            <div class="">
+                                <div class="col-12 col-sm-10 col-md-12 ">
+
+                                    <h1 class="fw-bolder" id="offcanvasRightLabel"> Book an Appointment </h1>
+                                    <p class="org"> ABOUT BOOKINGS & RESERVATIONS: </p>
+                                    <p class="text-secondary"> After filling out the form we will get back in touch with you about your reservation. Only after our verification, the booking is official. </p>
+                                    <h5> <a href="#" class="text-decoration-none question"> <b>Questions? </b>  Call +31 303 444 221 </a> </h5>
+
+
+                                    <form method="post" action="#">
+                                        <div class="col-12 p-3 bgcolor mb-4">
+                                            <p class="pt-2 pe-2"> Preferred day: </p>
+                                            <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" placeholder="Mon" /><a href="#" class="link text-decoration-none">mon</a> </label>
+                                            <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Tue </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Wed </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Thur </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Fri </a>  </label>
+                                        </div>
+
+                                        <div class="col-12 p-3 bgcolor">
+                                            <p class="pt-2 pe-2"> Preferred time: </p>
+                                            <label class="form-label col-5 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 09:00 - 11:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 11:00 - 13:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 13:00 - 15:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 15:00 - 17:00 </a>  </label>
+                                        </div>
+
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="text" name="name" placeholder="Enter Your Name" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="email" name="email" placeholder="Enter Your Email" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="tel" name="phone" placeholder=" Enter Your Phone #" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A message" type="text" name="message" placeholder="Your message... " />
+                                        </div>
+                                        <div class="col-3 mt-5 ">
+                                            <button class="form-control-plaintext  submit text-white p-3" name="Submit" type="button" value="Submit"> Submit </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="khalfia0">
+        <div class="fadi">
+            <div class="container container11 d-flex flex-column justify-content-center align-items-center w-100 col-sm-12">
+                <div class="row row1 flex-column justify-content-center align-items-center text-center">
+                    <h1 class="title fw-bolder cont"> Products </h1>
+                    <p class="fs-4 cont"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+                </div>
+                <div class="position-relative sora">
+                    <div class="width bg-white"></div>
+                    <a href="#list1"><img src="bbeell.svg" class="bellow bg-white position-absolute p-3 shadow" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="khalfia1">
+        <div class="container ">
+            <div class="row justify-content-center double m-4">
+                <div class=" col-sm-12 col-lg-4 abaut align-self-center">
+                    <h1 class="fw-bolder">About our Services and Products </h1>
+                    <p class="text-secondary">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
+                    <p class="text-secondary">  Quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
+                </div>
+                <div id="list1" class=" col-sm-12 col-lg-5 list1 bg-white p-5 m-5 shadow ">
+                    <div> <h1> Popular </h1> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Aliquam </p> <p class="minut"> 45 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $55 </p> </div> </div> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Dolorem Ut Fugit Illo </p> <p class="minut"> 120 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $120 </p> </div> </div> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Et Quia Natus </p> <p class="minut"> 15 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag">$10 </p> </div> </div> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col col-8"> <p class="mb-0 fw-bold"> Ex Culpa Laborum Consectetur </p> <p class="minut"> 30 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $25 </p> </div> </div> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Molestias Voluptas </p> <p class="minut"> 45 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $35 </p> </div> </div> </div>
+                    <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Sunt Aliquid Sequi </p> <p class="minut"> 90 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $90 </p> </div> </div> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" container22 bg-white ">
+        <div class="container container00 mt-5 flex-lg-wrap justify-content-center">
+            <div class="member text-center">
+                <h1 id="cap" class="kohli"> Membership Cards</h1>
+                <p class="fs-3"> <a href="#" class=" mause"> Contact us </a> to order your card. </p>
+            </div>
+            <div class="col twolist d-md-flex justify-content-center">
+                <div class="col hei shadow bbaakk m-5 me-sm-0 pe-5 p-5 col-sm-12 col-md-6 col-lg-6 kohli position-relative overflow-hidden">
+                    <h4 class=" mb-2 float-start "> $35/month </h4>
+                    <div>
+                        <ul class="list-unstyled p-3 ">
+                            <li> Includes all General Products </li>
+                            <li> Includes all Popular Products </li>
+                            <li> Includes our Beauty Start Kit</li>
+                        </ul>
+                        <h1 class="weight text-white "> Silver </h1>
+                    </div>
+                </div>
+                <div class="col hei shadow bbaakk2 m-5 me-sm-0 p-5 col-sm-12 col-md-6 col-lg-6 text-white position-relative overflow-hidden">
+                    <h4 class=" mb-2 float-start ">  $75/month </h4>
+                    <ul class="list-unstyled p-3">
+                        <li> Includes all General Products </li>
+                        <li> Includes all Popular Products </li>
+                        <li> Includes our Beauty Start Kit </li>
+                    </ul>
+                    <h1 class="weight text-white position-absolute "> Gold </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container33">
+        <div class="fadi">
+            <div class="container31 d-flex flex-column justify-content-center align-items-center w-100">
+                <div class="text-center w-75">
+                    <h1 id="prodct"> Products & Services </h1>
+                    <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container55 p-5">
+        <div class="col col-sm-12 col-lg-5 list2 bg-white p-5 mt-0 m-5 shadow mx-auto mb-5">
+            <div> <h1> Beauty </h1> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold ms-3 float-end"> Dolorem Ut Fugit Illo  </p><div class="pupular d-flex justify-content-center mb-1"> popular </div>  <p class="minut"> 120 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $120 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Est Enim </p> <p class="minut"> 180 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $255 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Et Perferendis </p> <p class="minut"> 40 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $40 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Et Suspendis </p> <p class="minut"> 80 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $40 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Facilis Voluptatem Commodi </p> <p class="minut"> 10 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $60 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> In Lipsum </p> <p class="minut"> 20 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $45 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Voluptas Quis Sit Voluptatem </p> <p class="minut"> 30 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $35 </p> </div> </div> </div>
+        </div>
+
+        <div class="col col-sm-12 col-lg-5 list3 bg-white p-5 m-5 shadow mx-auto mb-5">
+            <div> <h1> Massage </h1> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold ms-3 float-end"> Aliquam <div class="pupular d-flex justify-content-center mb-1"> popular </div>  </p> <p class="minut"> 45 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $55 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Aliquam Totam Quibusdam Molestiae </p> <p class="minut"> 60 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $80 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Corrupti Rerum Aliquam</p> <p class="minut"> 45 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $60 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold  ms-3 float-end"> Et Quia Natus <div class="pupular d-flex justify-content-center mb-1"> popular </div> </p> <p class="minut"> 15 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $10 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Qui Doloremque Autem Qui </p> <p class="minut"> 80 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $60 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Similique Ipsam Magni Error </p> <p class="minut"> 50 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $40 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold ms-3 float-end"> Sunt Aliquid Sequi <div class="pupular d-flex justify-content-center mb-1"> popular </div></p> <p class="minut"> 90 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $90 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Tempora Corporis </p> <p class="minut"> 60 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $35 </p> </div> </div> </div>
+            <div> <div class="row bb pt-3 pb-2 ps-0 pe-auto"> <div class="col"> <p class="mb-0 fw-bold"> Tempore Neque Consequatur Quia </p> <p class="minut"> 25 minutes </p> </div> <div class="col d-flex align-items-center justify-content-end"> <p class="orag"> $40 </p> </div> </div> </div>
+
+        </div>
+    </div>
+
+    <div class=" lastcontainer">
+        <div class="container finalcontainer flex-column justify-content-center">
+            <div class="row rou1 mx-auto justify-content-center">
+                <div class="footer1 text-center p-3 col-sm-12 col-md-8"> <img src="time-regular-96.png" class="time" /> We’re open 09:00am – 6:00pm daily  </div>
+                <div class="footer2 text-center p-3 contactlink col-sm-12 col-md-4 "> <a href="#" class="text-decoration-none text-white "> Contact us </a></div>
+            </div>
+            <div class="row rou2 p-5 flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+                <div class="col p-3 flex-wrap flex-md-nowrap col-7 col-md-6 copy text-center second2 offset-lg-1 "> Copyright © Serenity- <b class="fw-light  second2"> Powered by<a href="https://webflow.com/" class="col-sm-6 hover second2"> Webflow </a> </b> <a href="https://template-serenity.webflow.io/template-info/licensing" class="col-sm-12  hover second2"> ImageLicensingInfo </a> </div>
+                <div class="col p-3 col-6 col-sm-12 col-lg-5 text-center">
+                    <a href="../About Us.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Aboutus </a>
+                    <a href="contactus.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Contactus </a>
+                    <a href="../Careers.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Joinus </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+

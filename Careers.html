@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,italic,500,600,700,800,900" media="all">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,italic,500,600,700,800,900" media="all">
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <title>Careers</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Poppins,sans-serif;
+            
+                overflow-x: hidden;
+                background-color: #f1efe9;
+            }
+
+            .offcanvas-end {
+                top: 0;
+                right: 0;
+                width: 470px;
+                border-left: 1px solid rgba(0,0,0,.2);
+                transform: translateX(100%);
+            }
+
+            .offcanvas.show {
+                transform: none;
+            }
+
+            .offcanvas {
+                position: fixed;
+                bottom: 0;
+                z-index: 1050;
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                visibility: hidden;
+                background-color: #fff;
+                background-clip: padding-box;
+                outline: 0;
+                transition: transform .3s ease-in-out;
+            }
+
+            .A {
+                border-bottom: 1px solid #e2d8d6;
+            }
+
+            .message {
+                padding-bottom: 100px;
+            }
+
+            .submit {
+                background-color: #e9895b;
+            }
+
+                .submit:hover {
+                    box-shadow: 2px -2px 2px #e9895b;
+                }
+
+            .bgcolor {
+                background-color: rgba(233,137,91,.1);
+            }
+
+            .link {
+                color: #1c2749;
+            }
+
+                .link:hover {
+                    color: rgba(255,90,0,0.5);
+                }
+
+            .org {
+                color: rgba(255,90,0,0.7);
+            }
+
+            .question {
+                color: #1c2749;
+            }
+
+                .question:hover {
+                    color: rgba(255,90,0,0.5);
+                }
+
+            .imgwid {
+                width: 120px;
+                height: 60px;
+            }
+
+            nav {
+                height: 55px;
+            }
+
+            @media(max-width:768px) {
+                .navbar-nav {
+                    height: 100%;
+                    width: 40%;
+                    background-color: white;
+                }
+            }
+
+            .as {
+                color: #1c2749;
+            }
+
+            .book {
+                background-color: #1c2749;
+                height: 55px;
+            }
+
+            .sa:hover {
+                color: #e9895b;
+            }
+
+            .book:hover {
+                color: #e9895b;
+            }
+
+            .book:hover {
+                background-color: #e9895b;
+            }
+
+
+
+            .color {
+                color: #1c2749;
+            }
+            .backgroung-img {
+                height:550px;
+                background-image: url('imges/5a828caa71acd50001b1b63d_Header-2.jpg');
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-position:50% 50%;
+            
+            }
+            @media(max-width:992px){
+                .backgroung-img {
+                    background-size: 100% 85%;
+                }
+
+                }
+
+            .center-content {
+                padding: 299px;
+            }
+
+            .div1 {
+                background-image: url('imges/5a82bc2e32f0d300017ee739_pexels-photo-787961 (1).jpeg');
+                background-size: cover;
+                background-position: 50% 50%;
+                left: 11%;
+                top: 0px ;
+                z-index: 5;
+                width: 330px;
+                height: 250px;
+                background-color: #1c2749;
+                box-shadow: 14px 14px 40px -10px rgb(0 0 0 / 40%);
+            }
+
+            .div2 {
+                background-size: cover;
+                background-image: url('imges/5a82bca6e3cb4800012ba9ea_pexels-photo-590516.jpeg');
+                background-position: 50% 50%;
+                top: 111px;
+        left:293px;
+                z-index: 6;
+                width: 170px;
+                height: 200px;
+            }
+
+            .div3 {
+                width: 270px;
+                height: 250px;
+                background-image: url('imges/5a82a18b25c8bc00017d36be_pexels-photo-301367.jpeg');
+                top: 223px;
+                left: 0;
+                z-index: 3;
+                width: 270px;
+                background-size: cover;
+            }
+
+            .div4 {
+                height: 250px;
+                background-image: url('imges/5a82a03f72707c000122f4ac_Mask.jpg');
+                background-size: cover;
+                left: 224px; top: 250px;
+                z-index: 4;
+                width: 260px;
+            }
+
+            .hglight {
+                color: #fdd500;
+            }
+
+            .title {
+                padding: 77px 20px 33px 38px;
+                color: #fff;
+            }
+
+                .title h4 {
+                    width: 170px;
+                    font-size: 15px;
+                    line-height: 21px;
+                    font-weight: 600;
+                }
+            .linebutton {
+                width: 19px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: #fff;
+                box-shadow: 7px 7px 20px -10px rgb(0 0 0 / 20%);
+                transition: box-shadow .2s ease;
+            }
+            .fontsiz {
+         font-size:5em;
+  
+        }
+            .orang {
+                color: #e9895b;
+            }
+            .fontz {
+                font-size: 2em;
+            }
+
+            .colora:hover {
+                color: #e9895b;
+            }
+
+            .secndbold {
+                color: #8f7a74;
+            }
+            
+            .marginconten {
+                margin-top: 10em;
+           }
+            .mtop {
+                margin-top: -5em;
+            }
+            .bordertopdash {
+                border-top: 1px dashed #8f7a74;
+                border-bottom: 1px dashed #8f7a74;
+               
+            }
+                .bordert a {
+                    background-color: #e9895b;
+                    margin-left:140px;
+                }
+                @media (max-width:765px)
+                {
+                    .backgroung-img1{height:849px;}
+                    .marginconten{margin-top:34em;}
+                }
+           
+
+                    @media (max-width: 768px) {.title{font-size:70px;} /*.rou1{width:631px; height:60px;}*/ .contactus{ width:100%; } .copy1{text-align:start; padding-right:45%;} .copy2{text-align:start; padding-right:45%;} .rou2,.copy { flex-direction: column; } .width,.bellow{visibility:hidden;} }
+        .rou1 { background-color: #fff;  box-shadow: 7px 7px 30px -10px ;/*width:631px;*/ height:60px; }
+        .time{ height:20px;  width:20px; margin-right:10px;}
+        .rou2{font-size:13px;}
+        .contactlink{background-color: #1c2749;}
+        .contactlink:hover{background-color:rgb(40,67,99);}
+        @media(max-width:576px){
+            .title{font-size:50px;}
+            #cap{font-size:45px;}
+            .rou2,.copy{flex-direction:column;}
+            .container00{width:100%; display:block;}
+            /*.container11,.abaut,.hei,.list1,.list2,.list3{width:100%;}*/
+            /*.double { display: block;  margin: 50px 50px 50px 500px;}*//*.abaut{width:500px;}*/ .width,.bellow{visibility:hidden;}
+            .khalfia1{display:flex; justify-content:center;}
+            .towlist{display:block;}
+
+            .rou1{height:100%;/* width:70%;*/}
+            /*.hei{margin:50px 400px;}*/
+        }
+
+                  @media(min-width:992px){
+            .finalcontainer{position:relative;}
+            .rou1{ position:absolute; top:-30px; left:25%;}
+            .container00{padding:150px;}
+            .fs-4{width:65%;}
+            .rou1{width:630px;}
+        }
+        .hover:hover{color:rgba(255,90,0,0.5);}
+        .second{color: #8f7a74;}
+        .second2{color: #1c2749;}
+        .lastcontainer{background-color:rgba(221,224,235,0.5); margin-top:100px; padding:0px; width:100%;}
+
+
+
+          .cont {
+            animation-name:cont;
+            animation-duration:1s;
+            animation-direction:reverse;
+            animation-fill-mode:backwards;
+        }
+        @keyframes cont{
+            from{margin-top:20px;}
+            to{margin-bottom:50px;}
+       }
+            @media (max-width: 479px) {
+                body {
+                    width: 150%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-light  navbar-expand-md bg-white fixed-top">
+            <div class="border-end">
+                <a class="navbar-brand ps-3" href="NavBar.html">
+                    <img src="imges/5a82a3ec71acd50001b1cb2b_Logo.svg" alt="" width="110" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggler " style="color:#e9895b;   background-color:rgba(233,137,91,0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:#e9895b;"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end AAA" id="mainnav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item m-3 aass">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item  m-3">
+                        <a href="AlaaProduct.html" class="nav-link as">Products</a>
+                    </li>
+                    <li class="nav-item dropdown  m-3">
+                        <a href="#" class="nav-link dropdown-toggle as" data-bs-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item"><a class="text-decoration-none as sa" href="About Us.html">About us</a></li>
+                            <li class="dropdown-item">
+                                <a class="text-decoration-none as sa" href="Careers.html">Careers</a>
+                            </li>
+                            <li class="dropdown-item"><a class="text-decoration-none as sa" href="#">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  m-3">
+                        <a href="contactus.html" class="nav-link as">Contact</a>
+                    </li>
+                    <li class="d-sm-flex justify-content-center align-items-center col-sm-12 col-md-3 ">
+
+                        <button class="form-control-plaintext text-white  book " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Bookappointment</button>
+
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="visibility: visible;" aria-modal="true" role="dialog">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">&nbsp;</h5>
+                                <button type="button" class="form-control-plaintext question d-flex justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close"> close </button>
+                            </div>
+                            <div class="offcanvas-body pt-0 p-4">
+
+                                <div class="">
+                                    <div class="col-12 col-sm-10 col-md-12 ">
+
+                                        <h1 class="fw-bolder" id="offcanvasRightLabel"> Book an Appointment </h1>
+                                        <p class="org"> ABOUT BOOKINGS & RESERVATIONS: </p>
+                                        <p class="text-secondary"> After filling out the form we will get back in touch with you about your reservation. Only after our verification, the booking is official. </p>
+                                        <h5> <a href="#" class="text-decoration-none question"> <b>Questions? </b>  Call +31 303 444 221 </a> </h5>
+
+
+                                        <form method="post" action="#">
+                                            <div class="col-12 p-3 bgcolor mb-4">
+                                                <p class="pt-2 pe-2"> Preferred day: </p>
+                                                <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" placeholder="Mon" /><a href="#" class="link text-decoration-none">mon</a> </label>
+                                                <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Tue </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Wed </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Thur </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Fri </a>  </label>
+                                            </div>
+
+                                            <div class="col-12 p-3 bgcolor">
+                                                <p class="pt-2 pe-2"> Preferred time: </p>
+                                                <label class="form-label col-5 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 09:00 - 11:00 </a>  </label>
+                                                <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 11:00 - 13:00 </a>  </label>
+                                                <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 13:00 - 15:00 </a>  </label>
+                                                <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 15:00 - 17:00 </a>  </label>
+                                            </div>
+
+                                            <div class="col-md-12 m-2 ">
+                                                <input class="form-control-plaintext A pb-3 pt-3" type="text" name="name" placeholder="Enter Your Name" />
+                                            </div>
+                                            <div class="col-md-12 m-2 ">
+                                                <input class="form-control-plaintext A pb-3 pt-3" type="email" name="email" placeholder="Enter Your Email" />
+                                            </div>
+                                            <div class="col-md-12 m-2 ">
+                                                <input class="form-control-plaintext A pb-3 pt-3" type="tel" name="phone" placeholder=" Enter Your Phone #" />
+                                            </div>
+                                            <div class="col-md-12 m-2 ">
+                                                <input class="form-control-plaintext A message" type="text" name="message" placeholder="Your message... " />
+                                            </div>
+                                            <div class="col-3 mt-5 ">
+                                                <button class="form-control-plaintext  submit text-white p-3" name="Submit" type="button" value="Submit"> Submit </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="backgroung-img d-flex flex-column justify-content-center align-items-center text-center ">
+
+
+            <div class="row justify-content-center align-items-center text-center ">
+
+                <div class="col-md-9">
+                    <h1 class=" color fw-bold  fontsiz  cont">Join Us</h1>
+                    <h3 class="color fw-light  mx-auto ps-lg-5 cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse variu.</h3>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row mtop">
+                <div class="col-sm-12 col-md-5 p-5 me-0">
+                    <h3 class="color fw-bold fontz ">
+                        4 reasons to join our team.
+                    </h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 position-relative ms-md-0 ">
+                    <div class="div1 position-absolute">
+                        <div class="title position-absolute end-0 start-0 bottom-0">
+                            <h4>Not just work. Time to  <span class="hglight">have fun</span>, too!</h4>
+                        </div>
+                    </div>
+                    <div class="div2 position-absolute">
+                        <div class="title position-absolute start-0 bottom-0 ">
+
+                            <h4>Various <span class="hglight">Franchise</span>options.</h4>
+                        </div>
+                    </div>
+                    <div class="div3 position-absolute">
+                        <div class=" title position-absolute start-0 bottom-0 pt-5 ">
+                            <h4><span class="hglight"> Free </span>cosmetic products.</h4>
+                        </div>
+                    </div>
+
+                    <div class="div4 position-absolute">
+                        <div class="title position-absolute end-0 start-0 bottom-0">
+
+
+                            <h4>Frequent<span class="hglight">workshops</span>and events.</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class=" marginconten">
+            <div class="row">
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item mb-5">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+
+                                    <div class="row">
+                                        <h3 class="col-12 pb-3 color text-decoration-none color colora">Massage Expert </h3>
+                                        <div class="col-12">
+                                            <p class=" mb-sm-0 d-md-inline pe-md-2 secndbold"><b>Location:</b> NY, USA</p>
+                                            <p class=" mb-sm-0    d-md-inline pe-md-2 secndbold"><b>Job Type:</b> Full-Time</p>
+                                            <p class=" d-md-inline secndbold"><b>Salary:</b> $3000 - $5000</p>
+                                        </div>
+                                    </div>
+
+
+
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body ">
+                                    <div class="row bordertopdash  justify-content-around mt-3">
+                                        <div class="col-sm-12 col-lg-5 pt-5 pb-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo. <br /> <br />  Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices
+                                        </div>
+                                        <div class="col-sm-12 col-lg-5 pt-5 pb-5"> odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare. <br /> <br /> Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</div>
+                                    </div>
+                                    <div class="row justify-content-around p-3">
+                                        <div class="col">
+                                            <h5 class="orang"><b>Excited about this job opening?</b></h5>
+                                            <p class="d-inline "><b>Let's connect! </b>Send us your resume</p>
+                                        </div>
+                                        <div class="col mt-md-3 bordert">
+                                            <a href="https://mail.google.com/" class="text-white text-decoration-none  p-sm-3">Send us an Email</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                <div class="row">
+                                    <h3 class="col-12 pb-3 color text-decoration-none color colora">Visagist (urgent) </h3>
+
+                                    <div class="col-12">
+                                        <p class=" mb-sm-0 d-md-inline pe-md-2 secndbold"><b>Location:</b> NY, USA</p>
+                                        <p class=" mb-sm-0    d-md-inline pe-md-2 secndbold"><b>Job Type:</b> Full-Time</p>
+                                        <p class=" d-md-inline secndbold"><b>Salary:</b> $3000 - $5000</p>
+                                    </div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body ">
+                                <div class="row bordertopdash  justify-content-around mt-3">
+                                    <div class="col-sm-12 col-lg-5 pt-5 pb-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo. <br /> <br />  Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices
+                                    </div>
+                                    <div class="col-sm-12 col-lg-5 pt-5 pb-5"> odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare. <br /> <br /> Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</div>
+                                </div>
+                                <div class="row justify-content-around p-3">
+                                    <div class="col">
+                                        <h5 class="orang"><b>Excited about this job opening?</b></h5>
+                                        <p class="d-inline "><b>Let's connect! </b>Send us your resume</p>
+                                    </div>
+                                    <div class="col mt-md-3 bordert">
+                                        <a href="https://mail.google.com/" class="text-white text-decoration-none  p-sm-3">Send us an Email</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class=" lastcontainer">
+            <div class="container finalcontainer flex-column justify-content-center">
+                <div class="row rou1 mx-auto justify-content-center">
+                    <div class="footer1 text-center p-3 col-sm-12 col-md-8"> <img src="time-regular-96.png" class="time" /> We’re open 09:00am – 6:00pm daily  </div>
+                    <div class="footer2 text-center p-3 contactlink col-sm-12 col-md-4 "> <a href="#" class="text-decoration-none text-white "> Contact us </a></div>
+                </div>
+                <div class="row rou2 p-5 flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+                    <div class="col p-3 flex-wrap flex-md-nowrap col-5 col-md-6 copy text-center second2"> Copyright © Serenity- <b class="fw-light  second2"> Powered by<a href="https://webflow.com/" class="col-sm-6 hover second2"> Webflow </a> </b> <a href="https://template-serenity.webflow.io/template-info/licensing" class="col-sm-12  hover second2"> ImageLicensingInfo </a> </div>
+                    <div class="col p-3 col-3 col-sm-12 col-lg-5 offset-lg-2  text-center">
+                        <a href="../About Us.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Aboutus </a>
+                        <a href="contactus.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Contactus </a>
+                        <a href="../Careers.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Joinus </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!--<div class="container marginconten ">
+        <div class="row px-3">
+            <div class="col-sm-12 col-lg-9 mx-auto bg-white p-4 ps-lg-5   ">
+
+                <a class="text-decoration-none  " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <h2 class="pb-3 d-inline ">
+                        Massage Expert
+                    </h2>
+                    <img src="imges/sahem.svg" class="linebutton float-end " />
+
+                </a>
+
+                <div class="mt-2">
+                    <p class=" mb-sm-0 d-md-inline pe-md-2 ">Location: NY, USA</p>
+                    <p class="mb-sm-0    d-md-inline pe-md-2 ">Job Type: Full-Time</p>
+                    <p class="d-md-inline ">Salary: $3000 - $5000</p>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <div class="col col-lg-6 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo.</p>
+                    <p>
+                        Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare.
+                    </p>
+                    <p>Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container marginconten mt-5">
+        <div class="row px-3">
+            <div class="col-sm-12 col-lg-9 mx-auto bg-white p-4 ps-lg-5">
+
+                <a class="
+                       text-decoration-none" data-bs-toggle="collapse" href="#collapseparg" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <h2 class="pb-3 d-inline ">
+                        Visagist (urgent)
+                    </h2>
+                    <img src="imges/sahem.svg" class="linebutton float-end" />
+
+                </a>
+
+                <div class="mt-2">
+                    <p class=" mb-sm-0 d-md-inline pe-md-2 ">Location: NY, USA</p>
+                    <p class="mb-sm-0    d-md-inline pe-md-2 ">Job Type: Full-Time</p>
+                    <p class="d-md-inline ">Salary: $3000 - $5000</p>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="collapseparg">
+            <div class="card card-body">
+                <div class="col col-lg-6 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo.</p>
+                    <p>
+                        Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare.
+
+                    </p>
+                    <p>Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+        <!--<div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <div class="col col-lg-6 align-content-lg-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo.</p>
+                <p class="">
+                    Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare.
+
+                </p>
+                <p>Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</p>
+            </div>
+        </div>
+    </div>-->
+        <!--<div class="background-color">
+        <div class="container marginconten ">
+
+            <div class="col col-lg-9 mx-auto bg-white  ps-5 pe-5 py-4 position-relative">
+                <a href="#" class="text-decoration-none ">
+
+                        <h2 class="pb-1">Massage Expert   </h2>
+
+                        <div>
+
+
+
+                            <p class="d-inline pe-2">Location: NY, USA</p>
+                            <p class="d-inline pe-2">Job Type: Full-Time</p>
+                            <p class="d-inline">Salary: $3000 - $5000</p>
+
+                        </div>
+                        <img src="imges/sahem.svg" class="linebutton position-absolute" />
+
+
+                </a>
+
+                <div class="overflow-hidden d-flex position-relative h-auto">
+                    <div class="col col-lg-6 align-content-lg-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis neque, accumsan at tincidunt aliquam, ornare ut magna. Curabitur molestie turpis purus, at vehicula dolor cursus et. Nunc pellentesque eleifend gravida. Nunc in justo vehicula, mollis ante tempor, aliquam ante. Integer ornare sapien quam, ornare malesuada nulla tristique non. Mauris porttitor porta dolor sed egestas. Mauris non erat nec magna viverra auctor id non orci. Proin et tincidunt urna, a laoreet urna. Nulla fermentum elit sit amet quam dapibus, rhoncus faucibus ex iaculis. Proin eu urna ac nisl consequat placerat et ac erat. Morbi volutpat nisi nec lobortis egestas. Curabitur at vehicula leo.</p>
+                        <p class="">
+                            Phasellus a aliquam neque. Etiam eu massa sit amet metus pharetra tristique. Morbi efficitur magna neque, ut convallis lorem lobortis eu. Phasellus pellentesque ultricies nunc, quis ultrices odio sodales nec. Integer ut varius tellus. Nulla eget augue turpis. Pellentesque consequat lorem sit amet enim sagittis ornare.
+
+                        </p>
+                        <p>Sed hendrerit consectetur mauris et sodales. Fusce at blandit lorem, sed consequat neque. In risus eros, egestas vitae sem quis, euismod rhoncus erat. Vestibulum sodales aliquam aliquam. Phasellus porttitor maximus congue. Aenean vitae nisi tempor, sollicitudin mauris eu, ullamcorper mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus a tempus dolor. In egestas lobortis viverra. In tristique sagittis varius. Sed convallis lectus at placerat laoreet. Vivamus mattis laoreet nunc, in finibus sapien convallis sit amet. Morbi eget tincidunt orci. Pellentesque dapibus faucibus mattis.</p>
+                    </div>
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="col col-lg-9 mx-auto bg-white  ps-5 pe-5 py-4 mt-4 position-relative">
+                <a href="#" class="text-decoration-none ">
+                    <h2 class="pb-1">Visagist (urgent)</h2>
+                    <div class="d-inline-block">
+                        <p class="d-inline pe-2">Location: Global</p>
+                        <p class="d-inline pe-2">Job Type: Full-Time</p>
+                        <p class="d-inline">Salary: $3000 - $5000</p>
+
+                    </div>
+                    <img src="imges/sahem.svg" class="linebutton position-absolute" />
+                </a>
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+    </div>-->
+
+    </body>
+    </html>

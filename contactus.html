@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alaa Swelem & Alaa Yaseen </title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+         *{box-sizing:border-box; margin:0px; padding:0px;}
+         body { width: 100%; height: 100%; font-family: sans-serif; font-size: 15px; color: #1c2749;  background-color:rgb(249,248,246); /* background-color: #f1efe9;*/ }
+        .header{font-weight:700;}
+        .container111 {
+            height: 650px;
+            background-image: url('imges/5c1411f91ac48f6c359c65e6_Header-6.jpg');
+            background-size: 100% 120%;
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+      .roww{margin-top:-140px;}
+        .shaffaf {
+            background-image: url('../girl.jpg');
+            background-image: linear-gradient(180deg,rgba(249,248,246,0) 44%,#f9f8f6);
+            z-index: 5;
+            padding-bottom: -100px;
+        }
+         .fadi{ background-image: linear-gradient(180deg,rgba(249,248,246,0) 44%,#f9f8f6);}
+      
+      
+        .mumgraund {
+            /* background-color: rgba(233,137,91,.8);*/
+            background-color: #e9895b;
+            background-image: url('bg2.png');
+            background-position: 50% -1%;
+            background-size: auto 320px;
+            background-repeat: no-repeat;
+        }
+       /* .background { background-image: url('bg2.png'); background-repeat:no-repeat; background-size:cover; background-position-y:top; }
+        .mumgraund{background-color: #e9895b;}*/
+
+
+       .empty{height:350px; opacity:0.5; }
+       /*.findus{margin-top:350px;}*/
+       .face{height:20px;  width:20px; margin-right:10px;}
+
+        .black:hover {
+            box-shadow: 1px 1px 5px;
+        }
+
+           @media (max-width: 768px) { .mumgraund{background-image:none; height:200px;} .title{font-size:70px;} /*.rou1{width:631px; height:60px;}*/ .contactus{ width:100%; } .copy1{text-align:start; padding-right:45%;} .copy2{text-align:start; padding-right:45%;} .rou2,.copy { flex-direction: column; } .width,.bellow{visibility:hidden;} }
+        .rou1 { background-color: #fff;  box-shadow: 7px 7px 30px -10px ;/*width:631px;*/ height:60px; }
+        .time{ height:20px;  width:20px; margin-right:10px;}
+        .rou2{font-size:13px;}
+        .contactlink{background-color: #1c2749;}
+        .contactlink:hover{background-color:rgb(40,67,99);}
+        @media(max-width:576px){
+           .container111{    background-size: 100% 90%;}
+            .empty{visibility:hidden;}
+            .header{font-size:50px;}
+            .rou2,.copy{flex-direction:column;}
+            /*.container11,.abaut,.hei,.list1,.list2,.list3{width:100%;}*/
+            /*.double { display: block;  margin: 50px 50px 50px 500px;}*//*.abaut{width:500px;}*/ .width,.bellow{visibility:hidden;}
+
+            .rou1{height:100%;/* width:70%;*/}
+            /*.hei{margin:50px 400px;}*/
+        }
+
+        
+
+
+        @media(max-width:992px) {
+            .header{font-size:70px;}
+             .rou2,.copy {
+                flex-direction: column;
+            }
+        }
+        @media(min-width:992px){
+            .header{font-size:80px;}
+            .finalcontainer{position:relative;}
+            .rou1{ position:absolute; top:-30px; left:25%;}
+            .container00{padding:150px;}
+            .fs-4{width:65%;}
+            .rou1{width:631px;}
+        }
+        @media(max-width:271px){.header{font-size:35px;}}
+        .hover:hover{color:rgba(255,90,0,0.5);}
+        .second{color: #8f7a74;}
+        .second2{color: #1c2749;}
+        .lastcontainer{background-color:rgba(221,224,235,0.5); margin-top:100px; padding:0px; width:100%;}
+
+
+       .A{border-bottom:1px solid #e2d8d6;}
+        .message{padding-bottom:100px;}
+        .submit{ background-color: #e9895b;}
+            .submit:hover {
+              box-shadow:2px -2px 2px #e9895b;
+            }
+
+            
+     
+        .offcanvas-start {
+            top: 0;
+            right: 0;
+            width: 450px;
+            border-left: 1px solid rgba(0,0,0,.2);
+            transform: translateX(100%);
+        }
+
+        .offcanvas.show {
+            transform: none;
+        }
+
+        .offcanvas {
+            position: fixed;
+            bottom: 0;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            visibility: hidden;
+            background-color: #fff;
+            background-clip: padding-box;
+            outline: 0;
+            transition: transform .3s ease-in-out;
+        }
+               .A{border-bottom:1px solid #e2d8d6;}
+        .message{padding-bottom:100px;}
+        .submit{ background-color: #e9895b;}
+            .submit:hover {
+              box-shadow:2px -2px 2px #e9895b;
+            }
+        .bgcolor{ background-color: rgba(233,137,91,.1);}
+        .link{ color: #1c2749;}
+        .link:hover{color:rgba(255,90,0,0.5);}
+        .org{color:rgba(255,90,0,0.7);}
+        .question{color: #1c2749;}
+        .question:hover{color:rgba(255,90,0,0.5);}
+
+           .imgwid {
+            width: 120px;
+            height: 60px;
+        }
+
+        nav {
+            height: 55px;
+     
+        }
+  @media(max-width:768px) {
+            .navbar-nav {
+                height:100%;
+                width:40%;
+                background-color:white;
+            }
+        }
+     .as{  
+            color:#1c2749;
+        }
+       .book{background-color:#1c2749; height:55px;}
+       .sa:hover{color:#e9895b;}
+       .book:hover{color:#e9895b;}
+       .book:hover{background-color:#e9895b;
+
+       }
+         .cont {
+            animation-name:cont;
+            animation-duration:1s;
+            animation-direction:reverse;
+            animation-fill-mode:backwards;
+        }
+        @keyframes cont{
+            from{margin-top:20px;}
+            to{margin-bottom:50px;}
+       }
+        @media(max-width:768px) {
+
+
+            .header{
+                line-height: 35px;
+            }
+
+        }
+
+        @media (max-width: 479px) {
+            body{width:150%;}
+            .header {
+                font-size: 35px;
+            }
+
+          
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light  navbar-expand-md bg-white fixed-top">
+        <div class="border-end">
+            <a class="navbar-brand ps-3" href="NavBar.html">
+                <img src="imges/5a82a3ec71acd50001b1cb2b_Logo.svg" alt="" width="110" height="40">
+            </a>
+        </div>
+        <button class="navbar-toggler " style="color:#e9895b;   background-color:rgba(233,137,91,0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:#e9895b;"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-end AAA" id="mainnav">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item m-3 aass">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item  m-3">
+                    <a href="AlaaProduct.html" class="nav-link as">Products</a>
+                </li>
+                <li class="nav-item dropdown  m-3">
+                    <a href="#" class="nav-link dropdown-toggle as" data-bs-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li class="dropdown-item"><a class="text-decoration-none as sa" href="About Us.html">About us</a></li>
+                        <li class="dropdown-item">
+                            <a class="text-decoration-none as sa" href="Careers.html">Careers</a>
+                        </li>
+                        <li class="dropdown-item"><a class="text-decoration-none as sa" href="#">404 Page</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item  m-3">
+                    <a href="contactus.html" class="nav-link as">Contact</a>
+                </li>
+                <li class="d-sm-flex justify-content-center align-items-center col-sm-12 col-md-3 ">
+
+                    <button class="form-control-plaintext text-white  book " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Bookappointment</button>
+
+
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="visibility: visible;" aria-modal="true" role="dialog">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">&nbsp;</h5>
+                            <button type="button" class="form-control-plaintext question d-flex justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close"> close </button>
+                        </div>
+                        <div class="offcanvas-body pt-0 p-4">
+
+                            <div class="">
+                                <div class="col-12 col-sm-10 col-md-12 ">
+
+                                    <h1 class="fw-bolder" id="offcanvasRightLabel"> Book an Appointment </h1>
+                                    <p class="org"> ABOUT BOOKINGS & RESERVATIONS: </p>
+                                    <p class="text-secondary"> After filling out the form we will get back in touch with you about your reservation. Only after our verification, the booking is official. </p>
+                                    <h5> <a href="#" class="text-decoration-none question"> <b>Questions? </b>  Call +31 303 444 221 </a> </h5>
+
+
+                                    <form method="post" action="#">
+                                        <div class="col-12 p-3 bgcolor mb-4">
+                                            <p class="pt-2 pe-2"> Preferred day: </p>
+                                            <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" placeholder="Mon" /><a href="#" class="link text-decoration-none">mon</a> </label>
+                                            <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Tue </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Wed </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Thur </a>  </label>
+                                            <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Fri </a>  </label>
+                                        </div>
+
+                                        <div class="col-12 p-3 bgcolor">
+                                            <p class="pt-2 pe-2"> Preferred time: </p>
+                                            <label class="form-label col-5 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 09:00 - 11:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 11:00 - 13:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 13:00 - 15:00 </a>  </label>
+                                            <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 15:00 - 17:00 </a>  </label>
+                                        </div>
+
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="text" name="name" placeholder="Enter Your Name" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="email" name="email" placeholder="Enter Your Email" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A pb-3 pt-3" type="tel" name="phone" placeholder=" Enter Your Phone #" />
+                                        </div>
+                                        <div class="col-md-12 m-2 ">
+                                            <input class="form-control-plaintext A message" type="text" name="message" placeholder="Your message... " />
+                                        </div>
+                                        <div class="col-3 mt-5 ">
+                                            <button class="form-control-plaintext  submit text-white p-3" name="Submit" type="button" value="Submit"> Submit </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="container" class=" shaffaf">
+        <div class=" container111  d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="col col-12 text-center ">
+                    <h1 class="header cont"> Contact us </h1>
+                    <h4 class="cont"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius. </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fadi">
+        <div class="container">
+            <div class="roww row p-lg-5 justify-content-center">
+                <div class="col-sm-12 col-md-6 colright p-5 bg-white">
+                    <h1 class="fw-bolder"> Get in touch <b class="fw-light">  with us. </b> </h1>
+                    <p> Question about our products or services? Feel free to send us an email any time. We'd love to hear from you. </p>
+                    <form method="post" action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control-plaintext A pb-3 pt-3" type="text" name="txtname" placeholder="your first name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control-plaintext A pb-3 pt-3" type="text" name="txtname" placeholder="last name" />
+                            </div>
+                        </div>
+                        <div class="col-md-12 m-2 ">
+                            <input class="form-control-plaintext A pb-3 pt-3" type="email" name="email" placeholder="Email Address" />
+                        </div>
+                        <div class="col-md-12 m-2 ">
+                            <input class="form-control-plaintext A pb-3 pt-3" type="tel" name="phone" placeholder="Phone numper" />
+                        </div>
+                        <div class="col-md-12 m-2 ">
+                            <input class="form-control-plaintext A message" type="text" name="message" placeholder="Your message... " />
+                        </div>
+                        <div class="col-3 mt-5">
+                            <button class="form-control-plaintext A submit text-white p-3" name="Submit" type="button" value="Submit"> Submit </button>
+                            <!--<input class="form-control-plaintext bg-success" type="submit" name="Submit" placeholder="Submit" />-->
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-sm-12 col-md-4 mumgraund d-flex flex-column justify-content-center align-items-center">
+                    <div class="empty">
+                        &nbsp; &nbsp; &nbsp;
+                    </div>
+                  
+                    <div class="findus p-md-0 p-5 ">
+                        <h3> Also find us on: </h3>
+                        <div class="black col-12 m-3 p-2"> <a href="www.facebook.com" class="text-decoration-none text-white ">  <img src="imges/facebook.svg" class="face" />  Facebook </a> </div>
+                        <div class="black col-12 m-3 p-2"> <a href="www.twitter.com" class="text-decoration-none text-white "> <img src="imges/twitter.svg" class="face" /> Twitter </a> </div>
+                        <div class="black col-12 m-3 p-2"> <a href="www,linkedin.com" class="text-decoration-none text-white "> <img src="linkedin.svg" class="face" /> LinkedIn </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" lastcontainer">
+        <div class="container finalcontainer flex-column justify-content-center">
+            <div class="row rou1 mx-auto justify-content-center">
+                <div class="footer1 text-center p-3 col-sm-12 col-md-8"> <img src="time-regular-96.png" class="time" /> We’re open 09:00am – 6:00pm daily  </div>
+                <div class="footer2 text-center p-3 contactlink col-sm-12 col-md-4 "> <a href="#" class="text-decoration-none text-white "> Contact us </a></div>
+            </div>
+            <div class="row rou2 p-5 flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+                <div class="col p-3 flex-wrap flex-md-nowrap col-5 col-md-6 copy text-center second2 offset-lg-2 "> Copyright © Serenity- <b class="fw-light  second2"> Powered by<a href="https://webflow.com/" class="col-sm-6 hover second2"> Webflow </a> </b> <a href="https://template-serenity.webflow.io/template-info/licensing" class="col-sm-12  hover second2"> ImageLicensingInfo </a> </div>
+                <div class="col p-3 col-3 col-sm-12 col-lg-5 text-center">
+                    <a href="../About Us.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Aboutus </a>
+                    <a href="contactus.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Contactus </a>
+                    <a href="../Careers.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Joinus </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,italic,500,600,700,800,900" media="all">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,italic,500,600,700,800,900" media="all">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /></svg>-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title> HOME </title>
+    <style>
+        * { box-sizing: border-box;}
+        body { font-family: Poppins,sans-serif; font-size: 15px; line-height: 24px;  padding: 0px;  background-color: #f9f8f6; color: #1c2749; }
+
+        .backimg {
+            background-image: url('imges/5a828caebd255a0001fa8674_Header-3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+            z-index: 40;
+        }
+        .conpad {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 940px;
+            padding-top: 22%;
+        }
+        .cont {
+            display: block;
+            width: 475px;
+            animation-name:cont;
+            animation-duration:1s;
+            animation-direction:reverse;
+            animation-fill-mode:backwards;
+        }
+        @keyframes cont{
+            from{margin-top:20px;}
+            to{margin-bottom:50px;}
+       }
+
+        .cont h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #1c2749;
+            }
+            .cont h4 {
+                margin-top: 16px;
+                margin-bottom: 0;
+                letter-spacing: 0px;
+            }
+        .twobtn {
+            margin-top: 40px;
+        }
+
+        .widbbt {
+            color: #fff;
+            width: 200px;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 12px 30px 10px;
+            background-color: #e9895b;
+            transition: box-shadow .2s ease,background-color .2s ease,color .2s ease;
+        }
+
+        .acol {
+            color: #8f7a74;
+            margin-left: 10px;
+            background-color: #fff;
+            color: #8f7a74;
+            width: 200px;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 12px 30px 10px;
+        }
+        .boxshdow {
+            box-shadow: 14px 14px 60px -10px #cecb;
+        }
+        .colororang {
+            color: #e9895b;
+        }
+        .pstyle {
+            margin-top: 10px;
+            color: #8f7a74;
+            font-size: 13px;
+        }
+
+        .index {
+            z-index: 3;
+            box-shadow: 14px 14px 60px -10px #cec4bc;
+        }
+
+        .divint {
+            background-color: #f3f1ec;
+            box-shadow: 7px 7px 70px -10px #c0a9a0;
+        }
+
+
+
+        
+        
+        
+        
+        
+        
+        
+
+        .khalfia0 { width: 100%; background-color: #e9895b; height:550px;}
+       .col1 { height: 100%; width: 480px; }
+
+        .backgroundimg {
+            position: absolute;
+            left: -129px;
+            top: 74px;
+            z-index: 1;
+            height: 510px;
+            opacity: .34;
+        }
+
+
+
+
+        .empty {
+            width: 1px;
+            height: 490px;
+            bottom: 0px;
+            left: 69%;
+        }
+
+        .bellow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            bottom: -20px;
+            left: 67%;
+        }
+
+        .container11 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cap {
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        .size {
+            height: 100px;
+            width: 100px;
+        }
+
+        .coolor {
+            color: rgb(223,140,95);
+        }
+
+        .colopas {
+           
+            z-index: 5;
+        }
+
+        li {
+            list-style-image: url('check-regular-24 (2).png');
+        }
+
+        .hei {
+            height: 200px;
+            width: 300px;
+            
+        }
+
+        .bbaakk {
+            background-color: gainsboro;
+            width: 478px;
+            height: 240px;
+        }
+
+        .bbaakk2 {
+            background-color: rgb(223,140,95);
+            width: 478px;
+            height: 220px;
+        }
+
+
+        .ppooss2 {
+            position: absolute;
+            bottom: -40px;
+        }
+
+        .kohli {
+            color: #1c2749;
+        }
+
+        .weight {
+            opacity: 0.4;
+            color: #fff;
+            font-size: 85px;
+            font-weight: 900;
+        }
+
+
+
+
+     .khalfia3{ height:200px;  width:100%; background-color:rgba(221,224,235,0.5); margin-top:50px;}
+      .fooot{ height:60px; width:55%; top:-25px; left:20%; }
+      
+      .contactus { width:200px; background-color: #1c2947; }
+      .contactus:hover{background-color:rgb(40,67,99);}
+        .foot2 {top:100px; left:-20px; }
+        .fstyle{font-size:12px; }
+        .mause:hover { color: rgb(255,90,0); }
+         .cool{ color:#908886;}
+
+        .rou1 { background-color: #fff; box-shadow: 7px 7px 30px -10px ; }
+        .time{ height:20px;  width:20px; margin-right:10px;}
+        .rou2{font-size:13px;}
+        .contactlink{background-color: #1c2749;}
+        .contactlink:hover{background-color:rgb(40,67,99);}
+     
+        .hover:hover{color:rgba(255,90,0,0.5);}
+        .second{color: #8f7a74;}
+        .second2{color: #1c2749;}
+        .lastcontainer{background-color:rgba(221,224,235,0.5); margin-top:100px; padding:0px;}
+
+        .coontainer{height:550px; position:relative;}
+        .massage {
+            width: 725px;
+            height: 510px;
+            opacity: 0.34;
+            position: absolute;
+            left: -260px;
+            top: 65px;
+            z-index: 1;
+           
+        }
+        .whoweare {
+            z-index: 3;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-top: -150px;
+            position:relative;
+        }
+        .lineemppty {
+            height: 300px;
+            width: 3px;
+            background-color: white;
+            position: absolute;
+            bottom: 48px;
+            left: 20%;
+            z-index: 5;
+        }
+
+        .discover{z-index:3; background-color: #f3f1ec;
+    box-shadow: 7px 7px 70px -10px #c0a9a0;}
+
+        .beel {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left:-750%;
+            
+        }
+        .khalfia0{position:relative;}
+        .background-image {
+            height: 510px;
+            width: 660px;
+            opacity: 0.35;
+            position:absolute;
+            right:15%;
+            top:10%;
+        }
+
+
+
+        
+
+        .offcanvas-end {
+            top: 0;
+            right: 0;
+            width: 450px;
+            border-left: 1px solid rgba(0,0,0,.2);
+            transform: translateX(100%);
+        }
+
+        .offcanvas.show {
+            transform: none;
+        }
+
+        .offcanvas {
+            position: fixed;
+            bottom: 0;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            visibility: hidden;
+            background-color: #fff;
+            background-clip: padding-box;
+            outline: 0;
+            transition: transform .3s ease-in-out;
+        }
+               .A{border-bottom:1px solid #e2d8d6;}
+        .message{padding-bottom:100px;}
+        .submit{ background-color: #e9895b;}
+            .submit:hover {
+              box-shadow:2px -2px 2px #e9895b;
+            }
+        .bgcolor{ background-color: rgba(233,137,91,.1);}
+        .link{ color: #1c2749;}
+        .link:hover{color:rgba(255,90,0,0.5);}
+        .org{color:rgba(255,90,0,0.7);}
+        .question{color: #1c2749;}
+        .question:hover{color:rgba(255,90,0,0.5);}
+
+           .imgwid {
+            width: 120px;
+            height: 60px;
+        }
+
+        nav {
+            height: 55px;
+     
+        }
+
+     .as{  
+            color:#1c2749;
+        }
+       .book{background-color:#1c2749; height:55px;}
+       .sa:hover{color:#e9895b;}
+       .book:hover{color:#e9895b;}
+       .book:hover{background-color:#e9895b;}
+
+
+        .div1 {
+            background-image: url('imges/5a82a03f72707c000122f4ac_Mask.jpg');
+            background-size: cover;
+            background-position: 50% 50%;
+            position: absolute;
+            left: 11%;
+            top: 246px;
+            z-index: 5;
+            width: 330px;
+            height: 250px;
+            background-color: #1c2749;
+            box-shadow: 14px 14px 40px -10px rgb(0 0 0 / 40%);
+        }
+
+        .div2 {
+            background-size: cover;
+            background-image: url('imges/5a82a04871acd50001b1c96e_Nails.jpg');
+            background-position: 50% 50%;
+            top: 315px;
+            left: 293px;
+            z-index: 6;
+            width: 170px;
+            height: 200px;
+        }
+
+        .div3 {
+            width: 270px;
+            height: 250px;
+            background-image: url('imges/5a82a05471acd50001b1c975_Wellness.jpg');
+            top:463px;
+            left: 0;
+            z-index: 3;
+            width: 270px;
+            background-size: cover;
+        }
+
+        .div4 {
+            height: 250px;
+            background-image: url('imges/5a82a18b25c8bc00017d36be_pexels-photo-301367.jpeg');
+            background-size: cover;
+            left: 224px;
+            top: 457px;
+            z-index: 4;
+            width: 260px;
+        }
+
+        .hglight {
+            color: #fdd500;
+        }
+
+        .title {
+            padding: 77px 20px 33px 38px;
+            color: #fff;
+        }
+
+            .title h4 {
+                width: 170px;
+                font-size: 15px;
+                line-height: 21px;
+                font-weight: 600;
+            }
+        .marginconten {
+            margin-top: 14em;
+        }
+
+        .bottommarg{margin-bottom:10em;}
+        .orange{
+                color: #e9895b;
+        }
+        .backimage2 {
+            position: absolute;
+            bottom: 30px;
+            right: -290px;
+            z-index: 1;
+            height: 510px;
+            width: 660px;
+            opacity: 0.35;
+        }
+        /*backimage2 position-absolute*/
+        .girl {
+            background-image: url('bg2.png');
+            background-repeat:no-repeat;
+            background-size:550px 490px;
+            background-position-x:right;
+            background-position-y:bottom;
+        }
+        @media(max-width:578px){
+            .girl{background-position-x:center; background-position-y:bottom;}
+        }
+
+        @media(max-width:768px) {
+            .navbar-nav {
+                height: 100%;
+                width: 40%;
+                background-color: white;
+            }
+        }
+
+        @media (max-width: 996px) {
+            .backimg {
+                height: 516px;
+            }
+
+            .conpad {
+                max-width: 720px;
+            }
+
+            .cont {
+                width: 490px;
+            }
+
+                .cont h1 {
+                    font-size: 57px;
+                    line-height: 34px;
+                }
+
+                .cont h4 {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+            .twobtn {
+                margin-top: 20px;
+            }
+
+            .index {
+                height: 400px;
+                box-shadow: 14px 14px 60px -10px #cec4bc;
+                margin-right: 4px;
+            }
+
+            .index, .divint {
+                padding: 35px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+
+
+            .cont {
+                width: auto;
+                max-width: 450px;
+            }
+
+                .cont h1 {
+                    font-size: 32px;
+                    line-height: 34px;
+                }
+
+                .cont h4 {
+                    margin-top: 25px;
+                    font-size: 21px;
+                    line-height: 26px;
+                }
+
+            .linewhite {
+                visibility: hidden;
+            }
+        }
+
+        @media (max-width: 479px) {
+            body {
+                width: 150%;
+            }
+
+            .backimg {
+                background-color: rgba(249,248,246,.6);
+            }
+
+            .conpad {
+                max-width: none;
+            }
+
+            .cont {
+                max-width: 300px;
+            }
+
+                .cont h1 {
+                    width: 300px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: -22px;
+                    letter-spacing: -1px;
+                }
+
+                .cont h4 {
+                    width: 291px;
+                    margin-top: 1px;
+                    font-size: 13px;
+                    line-height: 23px;
+                    letter-spacing: 0;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+            .acol {
+                margin-left: 0;
+                margin-top: -6px;
+            }
+
+            .widaa {
+                width: 219px;
+                height: 45px;
+            }
+
+            .twobtn {
+                max-width: 300px;
+                margin-top: 10px;
+            }
+
+            .linewhite {
+                visibility: hidden;
+            }
+        }
+
+
+
+
+
+
+        @media(max-width:576px) {
+            .colopas {
+                margin: 1% 50%;
+            }
+
+            .empty, .bellow, .backimage2 {
+                visibility: hidden;
+            }
+        }
+
+        @media(max-width:768px) {
+            .empty, .bellow {
+                visibility: hidden;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .foot2 {
+                max-width: 728px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .rou1 {
+                width: 90%;
+            }
+        }
+
+        @media(max-width:578px) {
+            .rou2, .copy {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:786px) {
+            .rou2, .copy {
+                flex-direction: column;
+            }
+
+            .lineemppty {
+                visibility: hidden;
+            }
+        }
+
+        @media(max-width:990px) {
+            .rou2, .copy {
+                flex-direction: column;
+            }
+        }
+
+        @media(min-width:768px) {
+            .rou1 {
+                width: 631px;
+                height: 60px;
+            }
+        }
+
+        @media(min-width:1500px) {
+            .finalcontainer {
+                position: relative;
+            }
+
+            .rou1 {
+                position: absolute;
+                top: -30px;
+                left: 25%;
+            }
+        }
+
+        @media (max-width:765px) {
+
+            .marginconten {
+                margin-top: 34em;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-light  navbar-expand-md bg-white fixed-top px-0 w-100">
+            <div class="border-end">
+                <a class="navbar-brand ps-3" href="project.html">
+                    <img src="imges/5a82a3ec71acd50001b1cb2b_Logo.svg" alt="" width="110" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggler justify-content-end" style="color:#e9895b;   background-color:rgba(233,137,91,0.1);" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:#e9895b;"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end AAA" id="mainnav">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item m-3 aass">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item  m-3">
+                        <a href="AlaaProduct.html" class="nav-link as">Products</a>
+                    </li>
+                    <li class="nav-item dropdown  m-3">
+                        <a href="#" class="nav-link dropdown-toggle as" data-bs-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item"><a class="text-decoration-none as sa" href="About Us.html">About us</a></li>
+                            <li class="dropdown-item">
+                                <a class="text-decoration-none as sa" href="Careers.html">Careers</a>
+                            </li>
+                            <li class="dropdown-item"><a class="text-decoration-none as sa" href="#">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item  m-3">
+                        <a href="contactus.html" class="nav-link as">Contact</a>
+                    </li>
+                    <li class="d-sm-flex justify-content-center align-items-center col-sm-12 col-md-3 ">
+
+                        <button class="form-control-plaintext text-white  book " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Bookappointment</button>
+
+
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="visibility: visible;" aria-modal="true" role="dialog">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">&nbsp;</h5>
+                                <button type="button" class="form-control-plaintext question d-flex justify-content-end" data-bs-dismiss="offcanvas" aria-label="Close"> close </button>
+                            </div>
+                            <div class="offcanvas-body pt-0 p-4">
+
+                                <div class="">
+                                    <div class="col-12 col-sm-10 col-md-12 ">
+
+                                        <h1 class="fw-bolder" id="offcanvasRightLabel"> Book an Appointment </h1>
+                                        <p class="org"> ABOUT BOOKINGS & RESERVATIONS: </p>
+                                        <p class="text-secondary"> After filling out the form we will get back in touch with you about your reservation. Only after our verification, the booking is official. </p>
+                                        <h5> <a href="#" class="text-decoration-none question"> <b>Questions? </b>  Call +31 303 444 221 </a> </h5>
+
+
+                                        <form method="post" action="#">
+                                            <div class="col-12 p-3 bgcolor mb-4">
+                                                <p class="pt-2 pe-2"> Preferred day: </p>
+                                                <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" placeholder="Mon" /><a href="#" class="link text-decoration-none">mon</a> </label>
+                                                <label class="form-label col-2 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Tue </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Wed </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Thur </a>  </label>
+                                                <label class="form-label col-2 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> Fri </a>  </label>
+                                            </div>
+                                        </form>
+                                            <form method="post" action="#">
+                                                <div class="col-12 p-3 bgcolor">
+                                                    <p class="pt-2 pe-2"> Preferred time: </p>
+                                                    <label class="form-label col-5 m-2"> <input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 09:00 - 11:00 </a>  </label>
+                                                    <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 11:00 - 13:00 </a>  </label>
+                                                    <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 13:00 - 15:00 </a>  </label>
+                                                    <label class="form-label col-5 m-2"><input class=" ms-2" type="radio" name="Day" /><a href="#" class="link text-decoration-none"> 15:00 - 17:00 </a>  </label>
+                                                </div>
+
+                                                <div class="col-md-12 m-2 ">
+                                                    <input class="form-control-plaintext A pb-3 pt-3" type="text" name="name" placeholder="Enter Your Name" />
+                                                </div>
+                                                <div class="col-md-12 m-2 ">
+                                                    <input class="form-control-plaintext A pb-3 pt-3" type="email" name="email" placeholder="Enter Your Email" />
+                                                </div>
+                                                <div class="col-md-12 m-2 ">
+                                                    <input class="form-control-plaintext A pb-3 pt-3" type="tel" name="phone" placeholder=" Enter Your Phone #" />
+                                                </div>
+                                                <div class="col-md-12 m-2 ">
+                                                    <input class="form-control-plaintext A message" type="text" name="message" placeholder="Your message... " />
+                                                </div>
+                                                <div class="col-3 mt-5 ">
+                                                    <button class="form-control-plaintext  submit text-white p-3" name="Submit" type="button" value="Submit"> Submit </button>
+                                                </div>
+                                            </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class=" backimg ">
+        <div class="container-fluid text-center   d-flex  justify-content-center align-items-center conpad">
+            <div class="cont justify-content-center align-items-center text-center">
+                <h1 class="fw-bold  mb-0"><span class="color cont">Beauty Experts</span></h1>
+
+                <h4 class="fw-light " id="opacity"><span class="color cont">Serenity, a professional Beauty &amp; Spa Salon in New York City.</span></h4>
+
+                <div class="d-inline-block  justify-content-sm-center text-center widaa twobtn  d-sm-flex">
+                    <p class="cont"><a href="#" class="d-inline-block text-decoration-none widbbt">Tell me more</a></p>
+                    <p class="cont"><a href="#" class="d-inline-block text-decoration-none d-inline-block acol">Book appointment </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container coontainer">
+        <div class="row  justify-content-center">
+            <div class="whoweare col-sm-12 col-md-5 p-5  bg-white">
+                <h1> Who are we? </h1>
+                <div>
+                    <h5 class="orange"> Beauty Experts </h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim. </p>
+                </div>
+                <div>
+                    <h5 class="orange"> Massage Experts </h5>
+                    <p> Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero. </p>
+                </div>
+            </div>
+            <div class="discover col col-sm-12 col-md-5 col-lg-4 p-5 position-relative  ">
+                <div class="bottommarg">
+                    <h2> Discover our all-round packages. </h2>
+                    <p> Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet dolorem. </p>
+
+                </div>
+                <div>
+                    <div class="div1 position-absolute">
+                        <div class="title position-absolute end-0 start-0 bottom-0">
+                            <h4>Ultimate relaxing in our <span class="hglight">Wellness Center</span>.</h4>
+                        </div>
+                    </div>
+                    <div class="div2 position-absolute">
+                        <div class="title position-absolute start-0 bottom-0">
+
+                            <h4>Professional<span class="hglight"> Nail Artists</span>.</h4>
+                        </div>
+                    </div>
+                    <div class="div3 position-absolute">
+                        <div class=" title  position-absolute start-0 bottom-0 pt-5 ">
+                            <h4><span class="hglight">Massage</span> Experts.</h4>
+                        </div>
+                    </div>
+
+                    <div class="div4 position-absolute">
+                        <div class="title position-absolute end-0 start-0 bottom-0 ">
+
+
+                            <h4>Big Collection of <span class="hglight">Beauty Products</span>.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="lineemppty d-flex flex-column justify-content-end">
+            <a href="#sahem" class="shadow"><img src="bellow.svg" class="beel bg-white p-3" /> </a>
+        </div>
+        <img src="Masasge_Massage.png" class="massage" />
+
+    </div>
+
+    <div class="khalfia0 marginconten">
+        <div class="container container00  position-relative">
+            <div class="row mb-5 flex-nowrap overflow-hidden"  id="sahem">
+                <div class=" col1 p-3 m-5 col-sm-12 ps-sm-5">
+                    <div class="col">
+                        <h1> We've got 4 locations in New York City.  </h1>
+                    </div>
+                    <div class="col mt-4 mb-4">
+                        <h3 class="text-white"> A professional team </h3>
+                        <p class="text-white"> Commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="text-white"> Beautiful Salon </h3>
+                        <p class="text-white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare. </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col emptydad">
+                <div class=" empty bg-white position-absolute "></div>
+                <a href="#sahem2"><img src="bbeell.svg" class="bellow bg-white p-3 position-absolute shadow " /></a>
+            </div>
+        </div>  
+        <img src="bg1.png" class="background-image" />
+    </div>
+
+    <div class="girl">
+
+        <div class="container container11 p-0 pt-5 p-sm-5 overflow-hidden position-relative">
+            <div id="center" class="text-center mt-0 ms-5 me-5 mb-0">
+                <h1 id="cap" class="kohli"> Membership Cards</h1>
+                <h3 class="kohli"> We are proud to present our membership cards. Enjoy the advantages. </h3>
+            </div>
+            <div class="row justify-content-center  pt-4 ">
+                <div class="col m-5">
+                    <div class="text-center">
+                        <img src="love.svg" class="size" />
+                        <h3 class="coolor"> Frequent Visitors </h3>
+                        <p class="text-secondary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                    </div>
+                    <div class="text-center" id="sahem2">
+                        <img src="makeup.svg" class="size" />
+                        <h3 class="coolor"> Loving Care </h3>
+                        <p class="text-secondary"> Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
+                    </div>
+                </div>
+                <div class="col colopas">
+                    <div class="col hei bbaakk mb-5 p-2 pe-5 col-sm-12 mt-5 kohli position-relative shadow overflow-hidden">
+                        <h4 class=" mb-2 float-end p-4"> $35/month </h4>
+                        <div>
+                            <ul class="list-unstyled p-5 pb-0">
+                                <li> Includes all General Products </li>
+                                <li> Includes all Popular Products </li>
+                                <li> Includes our Beauty Start Kit</li>
+                            </ul>
+                            <h1 class="weight text-white ppooss1 ps-4"> Silver </h1>
+                        </div>
+                    </div>
+                    <div class="col hei bbaakk2 p-2 pe-5 col-sm-12 col-md-12 text-white position-relative shadow overflow-hidden">
+                        <h4 class=" mb-2 float-end p-4">  $75/month </h4>
+                        <ul class="list-unstyled p-5 pb-0">
+                            <li> Includes all General Products </li>
+                            <li> Includes all Popular Products </li>
+                            <li> Includes our Beauty Start Kit </li>
+                        </ul>
+                        <h1 class="weight text-white position-absolute ppooss2 ps-4"> Gold </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--<img src="bg2.png" class="backimage2 position-absolute" />-->
+        </div>
+
+    </div>
+
+    <div class=" lastcontainer">
+        <div class="container finalcontainer flex-column justify-content-center">
+            <div class="row rou1 mx-auto justify-content-center">
+                <div class="footer1 text-center p-3 col-sm-12 col-md-8"> <img src="time-regular-96.png" class="time" /> We’re open 09:00am – 6:00pm daily  </div>
+                <div class="footer2 text-center p-3 contactlink col-sm-12 col-md-4 "> <a href="#" class="text-decoration-none text-white "> Contact us </a></div>
+            </div>
+            <div class="row rou2 p-5 flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+                <div class="col p-3 flex-wrap flex-md-nowrap col-5 col-md-6 copy text-center second2"> Copyright © Serenity- <b class="fw-light  second2"> Powered by<a href="https://webflow.com/" class="col-sm-6 hover second2"> Webflow </a> </b> <a href="https://template-serenity.webflow.io/template-info/licensing" class="col-sm-12  hover second2"> ImageLicensingInfo </a> </div>
+                <div class="col p-3 col-3 col-sm-12 col-lg-5 offset-lg-2  text-center">
+                    <a href="../About Us.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Aboutus </a>
+                    <a href="contactus.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Contactus </a>
+                    <a href="../Careers.html" class="col col-sm-12 col-lg-1 m-2 text-decoration-none hover second"> Joinus </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
